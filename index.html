@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Crystal Ball 0.1.2</title>
+        <script src="js/index.js"></script>
+        <link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32" />
+		<link rel="icon" type="image/png" href="img/favicon-16x16.png" sizes="16x16" />
+        <link type="text/css" rel="stylesheet" href="css/index.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <h2>Simulation Month #<span id="simcount">0</span></h2>
+        <div id="mainvars">
+            <input id="mau" type="number" placeholder="Monthly Active Payers"/>
+            <input id="cps" type="number" placeholder="Cost per SMS"/>
+            <input id="grt" type="number" placeholder="Growth Rate" />
+            <button id="sim" onclick="simulate()">simulate &#8629</button><br><br>
+            <select id="res">
+                <option value="sad">a sad one</option>
+                <option value="conservative" selected>a conservative prediction</option>
+                <option value="confident">a confident one</option>
+                <option value="lucky">I'm feeling lucky!</option>
+            </select>
+        </div><br>
+        <div id="infobox">
+            Revenue: <br>
+            <span class="moneybox" id="rev"> </span> 
+            <span class="moneybox" id="rev2"> </span>
+        </div>
+        <div id="infobox">
+            Transaction volume: <br>
+            <span class="moneybox" id="ttra"> </span> 
+            <span class="moneybox" id="ttra2"> </span>
+        </div>
+        <div id="infobox">
+            People budget: <br>
+            <span class="moneybox" id="grb"> </span> 
+            <span class="moneybox" id="grb2"> </span>
+        </div>
+        <div id="infobox">
+            Year's forecast: <br>
+            <span class="moneybox" id="yfore"> </span> 
+            <span class="moneybox" id="yfore2"> </span>
+        </div>
+        <div id="infobox">
+            Transaction average: <br>
+            <span class="moneybox" id="peru"> </span> 
+            <span class="moneybox" id="peru2"> </span>
+        </div>
+        <div id="infobox">
+            Number of Users: <br>
+            <span class="moneybox" id="nuse"> </span> 
+            <span class="moneybox" id="nuse2"> </span>
+        </div>
+        
+        
+        <br>
+        <p id="hint">
+            Hint: It's all about the users.
+            Grow that by [10X] ~ [10*100%] monthly.
+            Enter cities fast, map them in a week and aggressively 
+            get customers for businesses.
+        </p>
+    </body>
+</html>

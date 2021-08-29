@@ -1,0 +1,70 @@
+body {
+    font-size: 20px;
+    font-family: Arial;
+}
+
+input, select {
+    z-index: 300000000;
+    margin: 5px;
+    height: 30px;
+    padding: 2px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+#infobox {
+    display: inline-block;
+    margin: 25px;
+    margin-left: 15vh;
+    padding: 25px;
+    box-shadow: #bbbbbb11 0px 0px 10px 500px;
+    border-radius: 10px;
+    width: 200px;
+}
+
+.moneybox {
+    display: inline-block;
+    margin: 2px;
+    padding: 2px;
+    border-radius: 10px;
+    width: 80px;
+}
+
+#mainvars {
+    padding-left: 15vh;
+    padding-right: 15vh;
+    display: block;
+    background-color: white;
+}
+
+h2 {
+    z-index: 20000;
+    margin: 50px;
+    margin-left: 16vh;
+}
+
+#sim {
+    z-index: 300000000;
+    text-align: center;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #00800099;
+    color: white;
+    font-weight: bold;
+}
+
+#sim:hover {
+    background-color: #008000cc;
+    cursor: pointer;
+}
+#hint {
+    margin: unset;
+    padding: none;
+    width: 99%;
+    font-size: 12px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 5px;
+    text-align: center;
+}
